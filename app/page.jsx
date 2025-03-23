@@ -94,7 +94,7 @@ export default function SellerLanding() {
           {/* Product Price */}
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-700 mb-1">
-              Price ($) <span className="text-red-500">*</span>
+              Price (Rs) <span className="text-red-500">*</span>
             </label>
             <input
               type="number"
