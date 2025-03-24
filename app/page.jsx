@@ -36,7 +36,7 @@ export default function SellerLanding() {
 
     try {
       const response = await axios.post(
-        "https://recyclehub.onrender.com/api/add-product",
+        "https://recyclehub-production.up.railway.app/api/add-product",
         formData
       );
       alert("Product uploaded successfully!");
