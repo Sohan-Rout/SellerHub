@@ -62,7 +62,7 @@ export default function SellerLanding() {
       <section className="bg-gradient-to-b from-green-100 to-gray-100 py-12">
         <div className="container mx-auto text-center px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Welcome to Seller Hub
+            Welcome to SellerHub
           </h1>
           <p className="text-lg text-gray-600 mb-8">
             Manage your products, upload new items, and grow your business with ease.
