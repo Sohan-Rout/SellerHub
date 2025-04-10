@@ -1,8 +1,9 @@
-// app/components/Hero.jsx
+'use client';
 import Link from "next/link";
+import Image from "next/image";
 import { FaLeaf, FaArrowRight } from "react-icons/fa";
 
-export default function Hero() {
+const Hero = () => {
   return (
     <section className="relative bg-gradient-to-b from-green-50 to-white">
       {/* Background pattern */}
@@ -31,7 +32,7 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link 
-                href="/sell" 
+                href="/redirect/sellerPage" 
                 className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-medium flex items-center justify-center gap-2 transition"
               >
                 Start Selling <FaArrowRight />
@@ -49,7 +50,7 @@ export default function Hero() {
                 {[1, 2, 3].map((item) => (
                   <img 
                     key={item}
-                    src={`/images/avatar-${item}.jpg`} 
+                    src={`/avatar-${item}.jpg`} 
                     alt="Seller" 
                     className="w-8 h-8 rounded-full border-2 border-white"
                   />
@@ -61,11 +62,14 @@ export default function Hero() {
           
           {/* Image */}
           <div className="lg:w-1/2 relative">
-            <div className="relative rounded-xl overflow-hidden shadow-2xl">
-              <img 
-                src="/images/hero-products.jpg" 
+            <div className="relative rounded-xl overflow-hidden shadow-2xl aspect-[4/3]">
+              <Image 
+                src="/cup.png" 
                 alt="Eco-friendly products" 
-                className="w-full h-auto"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+                priority
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                 <div className="text-white">
@@ -84,3 +88,5 @@ export default function Hero() {
     </section>
   );
 }
+
+export default Hero;

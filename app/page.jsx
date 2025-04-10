@@ -1,13 +1,15 @@
-// app/seller/page.jsx
+'use client';
+import Navbar from "@/app/components/navbar";
 import Hero from "@/app/components/Hero";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
+import Feature from "@/app/components/features";
+import Footer from "@/app/components/footer";
 
 export default function SellerLanding() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <Navbar />
-      <Hero showSellerFormLink={true} />
+      <Hero />
+      <Feature />
       <Footer />
     </div>
   );
