@@ -1,5 +1,4 @@
-'use client';
-import Link from "next/link";
+"use client";
 import Image from "next/image";
 import { FaLeaf, FaArrowRight } from "react-icons/fa";
 import { useRouter } from "next/navigation";
@@ -38,17 +37,17 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start relative z-10">
               <button
-                onClick={() => router.push('components/pages/sellerPage')}
+                onClick={() => router.push("components/pages/sellerPage")}
                 className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-medium flex items-center justify-center gap-2 transition cursor-pointer"
               >
                 Start Selling <FaArrowRight />
               </button>
-              <Link
-                href="/components/pages/howItWorks"
+              <button
+                onClick={() => router.push("/components/pages/howItWorks")}
                 className="border border-gray-300 hover:border-green-400 text-gray-700 hover:text-green-700 px-6 py-3 rounded-md font-medium transition cursor-pointer"
               >
                 How It Works
-              </Link>
+              </button>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start gap-2 text-sm text-gray-500">
@@ -56,7 +55,7 @@ const Hero = () => {
                 {[1, 2, 3].map((item) => (
                   <img
                     key={item}
-                    src={`/avatar-${item}.jpg`} 
+                    src={`/avatar-${item}.jpg`}
                     alt={`Seller ${item}`}
                     className="w-8 h-8 rounded-full border-2 border-white"
                     onError={(e) => {
@@ -99,6 +98,6 @@ const Hero = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
