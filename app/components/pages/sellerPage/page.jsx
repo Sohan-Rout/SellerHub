@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
 import SellerForm from '@/app/components/sellerform';
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
+import Navbar from '@/app/components/navbar';
+import Footer from '@/app/components/footer';
 
 const SellerPage = () => {
   const [activeTab, setActiveTab] = useState('upload');
