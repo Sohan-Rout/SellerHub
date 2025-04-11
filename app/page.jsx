@@ -11,7 +11,9 @@ export default function SellerLanding() {
       <div id="home">
         <Hero />
       </div>
-      <Feature />
+      <div id="feature">
+        <Feature />
+      </div>
       <Footer />
     </div>
   );

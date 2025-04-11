@@ -23,7 +23,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link 
-              href="/features" 
+              href="#feature" 
               className="text-white hover:text-green-600 transition-colors font-medium"
             >
               Features
@@ -35,7 +35,7 @@ export default function Navbar() {
               For Sellers
             </Link>
             <Link 
-              href="/buyers" 
+              href="/components/pages/buyerPage" 
               className="text-white hover:text-green-600 transition-colors font-medium"
             >
               For Buyers
