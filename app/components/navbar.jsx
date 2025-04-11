@@ -17,7 +17,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
           <Link 
-              href="#home" 
+              href="/#home" 
               className="text-white hover:text-green-600 transition-colors font-medium"
             >
               Home
@@ -41,7 +41,7 @@ export default function Navbar() {
               For Buyers
             </Link>
             <Link 
-              href="/about" 
+              href="/#about" 
               className="text-white hover:text-green-600 transition-colors font-medium"
             >
               About

@@ -2,6 +2,7 @@
 import Navbar from "@/app/components/navbar";
 import Hero from "@/app/components/hero";
 import Feature from "@/app/components/features";
+import About from "@/app/components/about";
 import Footer from "@/app/components/footer";
 
 export default function SellerLanding() {
@@ -13,6 +14,9 @@ export default function SellerLanding() {
       </div>
       <div id="feature">
         <Feature />
+      </div>
+      <div id="about">
+        <About />
       </div>
       <Footer />
     </div>

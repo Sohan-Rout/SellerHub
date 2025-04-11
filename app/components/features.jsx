@@ -83,30 +83,6 @@ export default function FeaturesPage() {
             </div>
           </div>
         </section>
-  
-        {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white">
-          <div className="container mx-auto px-6 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Grow Your Sustainable Business?</h2>
-            <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
-              Join hundreds of eco-conscious sellers already benefiting from SellerHub's platform.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a 
-                href="/seller" 
-                className="bg-white text-green-600 px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition duration-200"
-              >
-                Start Selling Now
-              </a>
-              <a 
-                href="/how-it-works" 
-                className="border-2 border-white text-white px-8 py-3 rounded-md font-bold hover:bg-white hover:text-green-600 transition duration-200"
-              >
-                How It Works
-              </a>
-            </div>
-          </div>
-        </section>
       </div>
     );
   }

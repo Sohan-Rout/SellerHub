@@ -2,8 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaLeaf, FaArrowRight } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const router = useRouter();
+
   return (
     <section className="relative bg-gradient-to-b from-green-50 to-white">
       {/* Background pattern */}
@@ -33,16 +36,16 @@ const Hero = () => {
               production.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link
-                href="/redirect/sellerPage"
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-medium flex items-center justify-center gap-2 transition"
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start relative z-10">
+              <button
+                onClick={() => router.push('components/pages/sellerPage')}
+                className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md font-medium flex items-center justify-center gap-2 transition cursor-pointer"
               >
                 Start Selling <FaArrowRight />
-              </Link>
+              </button>
               <Link
                 href="/how-it-works"
-                className="border border-gray-300 hover:border-green-400 text-gray-700 hover:text-green-700 px-6 py-3 rounded-md font-medium transition"
+                className="border border-gray-300 hover:border-green-400 text-gray-700 hover:text-green-700 px-6 py-3 rounded-md font-medium transition cursor-pointer"
               >
                 How It Works
               </Link>
@@ -53,11 +56,11 @@ const Hero = () => {
                 {[1, 2, 3].map((item) => (
                   <img
                     key={item}
-                    src={`/avatar-${item}.jpg`} // Changed .jpeg to .jpg (more common)
-                    alt={`Seller ${item}`} // Better alt text
+                    src={`/avatar-${item}.jpg`} 
+                    alt={`Seller ${item}`}
                     className="w-8 h-8 rounded-full border-2 border-white"
                     onError={(e) => {
-                      e.currentTarget.src = "/default-avatar.jpg"; // Add a fallback image
+                      e.currentTarget.src = "/default-avatar.jpg";
                       e.currentTarget.alt = "Default avatar";
                     }}
                   />
