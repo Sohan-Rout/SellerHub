@@ -44,7 +44,7 @@ const Hero = () => {
                 Start Selling <FaArrowRight />
               </button>
               <Link
-                href="/how-it-works"
+                href="/components/pages/howItWorks"
                 className="border border-gray-300 hover:border-green-400 text-gray-700 hover:text-green-700 px-6 py-3 rounded-md font-medium transition cursor-pointer"
               >
                 How It Works
