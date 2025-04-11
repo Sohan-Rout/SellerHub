@@ -23,13 +23,13 @@ export default function Navbar() {
               Home
             </Link>
             <Link 
-              href="#feature" 
+              href="/#feature" 
               className="text-white hover:text-green-600 transition-colors font-medium"
             >
               Features
             </Link>
             <Link 
-              href="/sellers" 
+              href="/components/pages/sellerPage" 
               className="text-white hover:text-green-600 transition-colors font-medium"
             >
               For Sellers
