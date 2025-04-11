@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import EcoShopNavbar from '@/app/components/navbarBuyer';
 import EcoShopFooter from '@/app/components/footerBuyer';
-import { FaLeaf } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
 
 const BuyerPage = () => {
   const [products, setProducts] = useState([]);
@@ -127,7 +127,7 @@ const BuyerPage = () => {
                     <h3 className="font-semibold text-gray-800 mb-1">{product.name}</h3>
                     <p className="text-gray-600 text-sm mb-2 line-clamp-2">{product.description}</p>
                     <div className="flex justify-between items-center">
-                      <span className="font-bold text-green-600">${product.price}</span>
+                      <span className="font-bold text-green-600">Rs.{product.price}</span>
                       <button
                         onClick={() => addToCart(product)}
                         className="bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700 transition"
