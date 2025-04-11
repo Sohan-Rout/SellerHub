@@ -8,7 +8,9 @@ export default function SellerLanding() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <Navbar />
-      <Hero />
+      <div id="home">
+        <Hero />
+      </div>
       <Feature />
       <Footer />
     </div>
