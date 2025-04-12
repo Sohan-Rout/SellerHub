@@ -86,7 +86,7 @@ const AboutPage = () => {
               </ul>
               <div className="mt-8">
                 <a 
-                  href="/seller" 
+                  href="/components/pages/sellerPage" 
                   className="bg-green-600 text-white px-6 py-3 rounded-md font-medium hover:bg-green-700 transition inline-block"
                 >
                   Start Selling Sustainably
@@ -125,7 +125,7 @@ const AboutPage = () => {
               </ul>
               <div className="mt-8">
                 <a 
-                  href="/buyer" 
+                  href="/components/pages/buyerPage" 
                   className="bg-green-600 text-white px-6 py-3 rounded-md font-medium hover:bg-green-700 transition inline-block"
                 >
                   Start Shopping Sustainably
